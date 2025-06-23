@@ -119,8 +119,8 @@ public class FormAutenticarUsuario extends javax.swing.JFrame {
             String usuario = txtUsername.getText();
             String pass = txtPassword.getText();
 
-            GetUsuario obj = new GetUsuario();
-            obj.autenticar(usuario, pass);
+            GetUsuario getUsuario = new GetUsuario();
+            getUsuario.autenticar(usuario, pass, this);
 
     }//GEN-LAST:event_btnIngresarActionPerformed
 

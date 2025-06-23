@@ -5,19 +5,22 @@ import appjoyeriayuler.shared.MensajeSistema;
 
 public class GetUsuario {
 
-    public void autenticar(String usuario, String password) {
+    public void autenticar(String usuario, String password, FormAutenticarUsuario formAutenticarUsuario) {
+        // Validar campos vacíos
         if (usuario == null || password == null || 
-        usuario.trim().isEmpty() || password.trim().isEmpty()) {
-        
-        MensajeSistema.mostrarAdvertencia("Rellenar datos de usuario y/o contraseña", "");
-        return;
-    }
+            usuario.trim().isEmpty() || password.trim().isEmpty()) {
 
-    ControlAutenticarUsuario control = new ControlAutenticarUsuario();
-    List<String> privilegios = control.verificarUsuario(usuario, password);
+            MensajeSistema.mostrarAdvertencia("Rellenar datos de usuario y/o contraseña válidos", "");
+            return;
+        }
 
-    if (privilegios != null) {
-        new MenuPrincipal(privilegios).setVisible(true);
-    }
+        // Proceso de autenticación
+        ControlAutenticarUsuario control = new ControlAutenticarUsuario();
+        List<String> privilegios = control.verificarUsuario(usuario, password);
+
+        if (privilegios != null) {
+            new MenuPrincipal(privilegios).setVisible(true);
+            formAutenticarUsuario.dispose(); // Cierra la ventana de login correctamente
+        }
     }
 }
