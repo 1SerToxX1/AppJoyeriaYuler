@@ -3,12 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/carlo/Documents/NetBeansProjects/AppJoyeriaYuler/src/appjoyeriayuler/AppJoyeriaYuler.java</file>
+            <file>file:/C:/Users/carlo/Documents/NetBeansProjects/AppJoyeriaYuler/src/appjoyeriayuler/model/Conexion.java</file>
             <file>file:/C:/Users/carlo/Documents/NetBeansProjects/AppJoyeriaYuler/src/appjoyeriayuler/model/Usuario.java</file>
             <file>file:/C:/Users/carlo/Documents/NetBeansProjects/AppJoyeriaYuler/src/appjoyeriayuler/model/UsuarioDAO.java</file>
-            <file>file:/C:/Users/carlo/Documents/NetBeansProjects/AppJoyeriaYuler/src/appjoyeriayuler/controller/LoginController.java</file>
-            <file>file:/C:/Users/carlo/Documents/NetBeansProjects/AppJoyeriaYuler/src/appjoyeriayuler/AppJoyeriaYuler.java</file>
-            <file>file:/C:/Users/carlo/Documents/NetBeansProjects/AppJoyeriaYuler/src/appjoyeriayuler/view/MenuPrincipal.java</file>
-            <file>file:/C:/Users/carlo/Documents/NetBeansProjects/AppJoyeriaYuler/src/appjoyeriayuler/view/login.java</file>
+            <file>file:/C:/Users/carlo/Documents/NetBeansProjects/AppJoyeriaYuler/src/appjoyeriayuler/securityModule/ControlAutenticarUsuario.java</file>
+            <file>file:/C:/Users/carlo/Documents/NetBeansProjects/AppJoyeriaYuler/src/appjoyeriayuler/securityModule/FormAutenticarUsuario.java</file>
+            <file>file:/C:/Users/carlo/Documents/NetBeansProjects/AppJoyeriaYuler/src/appjoyeriayuler/securityModule/GetUsuario.java</file>
+            <file>file:/C:/Users/carlo/Documents/NetBeansProjects/AppJoyeriaYuler/src/appjoyeriayuler/shared/MensajeSistema.java</file>
+            <file>file:/C:/Users/carlo/Documents/NetBeansProjects/AppJoyeriaYuler/src/appjoyeriayuler/securityModule/MenuPrincipal.java</file>
         </group>
     </open-files>
 </project-private>

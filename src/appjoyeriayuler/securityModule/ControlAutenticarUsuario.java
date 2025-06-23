@@ -7,14 +7,14 @@ import appjoyeriayuler.shared.MensajeSistema;
 public class ControlAutenticarUsuario {
     private final UsuarioDAO dao = new UsuarioDAO();
 
-    public List<String> verificarUsuario(String login, String password) {
-        boolean resultado = dao.existeUsuario(login);
+    public List<String> verificarUsuario(String usuario, String password) {
+        boolean resultado = dao.existeUsuario(usuario);
         if (resultado) {
-            resultado = dao.passwordCorrecta(login, password);
+            resultado = dao.passwordCorrecta(usuario, password);
             if (resultado) {
-                resultado = dao.usuarioEstaActivo(login);
+                resultado = dao.usuarioEstaActivo(usuario);
                 if (resultado) {
-                    return dao.obtenerPrivilegios(login);
+                    return dao.obtenerPrivilegios(usuario);
                 } else {
                     MensajeSistema.mostrarAdvertencia("El usuario está deshabilitado", "Contacte al administrador.");
                 }

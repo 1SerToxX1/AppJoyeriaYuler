@@ -116,16 +116,12 @@ public class FormAutenticarUsuario extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarActionPerformed
-        String usuario = txtUsername.getText();
-        String pass = txtPassword.getText();
+            String usuario = txtUsername.getText();
+            String pass = txtPassword.getText();
 
-        ControlAutenticarUsuario controller = new ControlAutenticarUsuario();
-        List<String> privilegios = controller.verificarUsuario(usuario, pass);
+            GetUsuario obj = new GetUsuario();
+            obj.autenticar(usuario, pass);
 
-        if (privilegios != null) {
-            new MenuPrincipal(privilegios).setVisible(true);
-            this.dispose(); // Cierra la ventana de login
-        }
     }//GEN-LAST:event_btnIngresarActionPerformed
 
     /**
