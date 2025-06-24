@@ -14,4 +14,16 @@ public class MensajeSistema {
     public static void mostrarInfo(String mensaje) {
         JOptionPane.showMessageDialog(null, mensaje, "Información", JOptionPane.INFORMATION_MESSAGE);
     }
+    
+    public static boolean mostrarConfirmacion(String mensaje, String titulo) {
+    int opcion = JOptionPane.showConfirmDialog(
+        null,
+        mensaje,
+        titulo,
+        JOptionPane.YES_NO_OPTION,
+        JOptionPane.QUESTION_MESSAGE
+    );
+    return opcion == JOptionPane.YES_OPTION;
+}
+
 }
